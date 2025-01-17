@@ -27,7 +27,7 @@ min_lat, max_lat = 48.8593, 50.5231
 min_lon, max_lon = 10.0400, 12.5505
 
 # Streamlit UI
-st.title("VGN GPS Generator")
+st.title("Random GPS Coordinate Generator for VGN")
 st.write("Click the button to generate a random GPS coordinate within the VGN region.")
 
 if st.button("Generate Random GPS"):
