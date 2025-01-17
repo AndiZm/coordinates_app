@@ -12,6 +12,19 @@ st.markdown("""
         border-radius: 0px; /* No rounded corners */
         border: none; /* Remove any border */
     }
+    <style>
+    div.stButton > button {
+        background-color: #4CAF50; /* Green background */
+        color: white; /* White text color */
+        border: none;
+        border-radius: 5px; /* Rounded corners */
+        padding: 10px 20px; /* Button padding */
+        font-size: 16px; /* Text size */
+        cursor: pointer; /* Cursor on hover */
+    }
+    div.stButton > button:hover {
+        background-color: #45a049; /* Darker green on hover */
+    }
     </style>
     """, unsafe_allow_html=True)
 
