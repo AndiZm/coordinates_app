@@ -14,7 +14,7 @@ st.markdown("""
     }
     <style>
     div.stButton > button {
-        background-color: #4CAF50; /* Green background */
+        background-color: #f5af55; /* brown-ish background */
         color: white; /* White text color */
         border: none;
         border-radius: 5px; /* Rounded corners */
@@ -23,7 +23,7 @@ st.markdown("""
         cursor: pointer; /* Cursor on hover */
     }
     div.stButton > button:hover {
-        background-color: #45a049; /* Darker green on hover */
+        background-color: #f2be7c; /* a bit brighter on hover */
     }
     </style>
     """, unsafe_allow_html=True)
