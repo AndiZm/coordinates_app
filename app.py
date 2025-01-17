@@ -7,9 +7,10 @@ from shapely.geometry import Point
 st.markdown("""
     <style>
     div.stAlert {
-        background-color: #ffffff; /* Wtihe background */
-        color: black; /* text color */
-        border-radius: 0px; /* edgy corners */
+        background-color: white; /* Plain white background */
+        color: black; /* Black text */
+        border-radius: 0px; /* No rounded corners */
+        border: none; /* Remove any border */
     }
     </style>
     """, unsafe_allow_html=True)
