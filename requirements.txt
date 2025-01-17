@@ -1,5 +1,4 @@
 streamlit
 geopandas
 shapely
-tqdm
 matplotlib
