@@ -8,8 +8,8 @@ st.markdown("""
     <style>
     div.stAlert {
         background-color: #ffffff; /* Wtihe background */
-        color: #000080; /* Navy text color */
-        border-radius: 0px; /* Rounded corners */
+        color: black; /* text color */
+        border-radius: 0px; /* edgy corners */
         padding: 0px; /* Padding inside the message box */
     }
     </style>
