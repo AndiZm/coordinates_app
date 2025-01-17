@@ -7,9 +7,9 @@ from shapely.geometry import Point
 st.markdown("""
     <style>
     div.stAlert {
-        background-color: #f0f8ff; /* Light blue background */
+        background-color: #ffffff; /* Wtihe background */
         color: #000080; /* Navy text color */
-        border-radius: 10px; /* Rounded corners */
+        border-radius: 0px; /* Rounded corners */
         padding: 10px; /* Padding inside the message box */
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
     }
