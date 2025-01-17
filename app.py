@@ -32,4 +32,4 @@ st.write("Click the button to generate a random GPS coordinate within the VGN re
 
 if st.button("Generate Random GPS"):
     lat, lon = generate_random_point_in_VGN(bavaria_boundary, min_lat, max_lat, min_lon, max_lon)
-    st.success(f"{lat:.4f},   {lon:.4f}")
+    st.success(f"{lat:.4f}, {lon:.4f}")
