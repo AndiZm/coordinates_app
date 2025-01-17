@@ -10,7 +10,6 @@ st.markdown("""
         background-color: #ffffff; /* Wtihe background */
         color: black; /* text color */
         border-radius: 0px; /* edgy corners */
-        padding: 0px; /* Padding inside the message box */
     }
     </style>
     """, unsafe_allow_html=True)
