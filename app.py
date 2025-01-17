@@ -3,6 +3,19 @@ import random
 import geopandas as gpd
 from shapely.geometry import Point
 
+# Custom CSS to style Streamlit messages
+st.markdown("""
+    <style>
+    div.stAlert {
+        background-color: #f0f8ff; /* Light blue background */
+        color: #000080; /* Navy text color */
+        border-radius: 10px; /* Rounded corners */
+        padding: 10px; /* Padding inside the message box */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 # Function to generate random GPS coordinates
 def generate_random_point_in_VGN(bavaria_boundary, min_lat, max_lat, min_lon, max_lon):
     while True:
