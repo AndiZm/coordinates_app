@@ -55,5 +55,5 @@ class region(object):
             latitude, longitude = self. generate_random_point()
             lats.append(latitude)
             lons.append(longitude)
-        plt.plot(lats, lons, "."); plt.show()
+        plt.plot(lons, lats, "."); plt.show()
     
