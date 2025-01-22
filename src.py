@@ -3,7 +3,6 @@ import geopandas as gpd
 from shapely.geometry import Point
 import numpy as np
 import matplotlib.pyplot as plt
-from tqdm import tqdm
 
 class region(object):
 
@@ -52,7 +51,7 @@ class region(object):
     # Draw n test points to verify the algorithm
     def test_generation(self, n):
         lats = []; lons = []
-        for i in tqdm( range (0,n) ):
+        for i in range (0,n):
             latitude, longitude = self. generate_random_point()
             lats.append(latitude)
             lons.append(longitude)
