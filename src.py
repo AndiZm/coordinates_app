@@ -6,12 +6,14 @@ import matplotlib.pyplot as plt
 
 class region(object):
 
-    def __init__(self, gdf_file):
+    def __init__(self, gdf_name):
+        gdf_file = "data/" + gdf_name + ".geojson"
         self.gdf = gpd.read_file(gdf_file)
         self.boundary = self.gdf.unary_union
-        self.lat_range, self.lon_range = self.get_extremes()
-        print (f"Lat range: {self.lat_range[0]:.4f} {self.lat_range[1]:.4f}")
-        print (f"Lon range: {self.lon_range[0]:.4f} {self.lon_range[1]:.4f}")
+
+        self.limits = np.loadtxt("data/" + gdf_name + ".txt")
+        self.lat_range = [self.limits[0,0], self.limits[0,1]]
+        self.lon_range = [self.limits[1,0], self.limits[1,1]]
 
     # Extract extreme coordinates
     def get_extremes(self):
@@ -33,6 +35,10 @@ class region(object):
         lon_range = [np.min(x_coords), np.max(x_coords)]
     
         return lat_range, lon_range
+
+    # In case you don't trust the limits given in the txt
+    def recalculate_limits(self):
+        self.lat_range, self.lon_range = self.get_extremes()
     
     # Function to generate a random GPS coordinate within the VGN boundary
     def generate_random_point(self):
@@ -56,4 +62,3 @@ class region(object):
             lats.append(latitude)
             lons.append(longitude)
         plt.plot(lons, lats, "."); plt.show()
-    
