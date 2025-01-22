@@ -12,4 +12,4 @@ st.write("Click the button to generate a random GPS coordinate within the VGN re
 
 if st.button("Generate Random GPS"):
     lat, lon = vgn.generate_random_point()
-    st.success(f"Hurra: {lat:.4f}, {lon:.4f}")
+    st.success(f"{lat:.4f}, {lon:.4f}")
