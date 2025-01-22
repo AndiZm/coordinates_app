@@ -13,8 +13,8 @@ st.write("Click the button to generate a random GPS coordinate within the region
 
 if st.button("VGN"):
     lat, lon = vgn.generate_random_point()
-    st.success(f"{lat:.4f}, {lon:.4f}")
+    st.success(f"VGN: {lat:.4f}, {lon:.4f}")
 
 if st.button("Bavaria"):
     lat, lon = bayern.generate_random_point()
-    st.success(f"{lat:.4f}, {lon:.4f}")
+    st.success(f"Bavaria: {lat:.4f}, {lon:.4f}")
