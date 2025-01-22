@@ -4,9 +4,16 @@ import geopandas as gpd
 from shapely.geometry import Point
 from src import *
 
-vgn = region("vgn")
-bavaria = region("bavaria")
-germany = region("germany")
+if "vgn" not in st.session_state:
+    st.session_state.vgn = region("vgn")
+if "bavaria" not in st.session_state:
+    st.session_state.bavaria = region("bavaria")
+if "germany" not in st.session_state:
+    st.session_state.germany = region("germany")
+
+vgn = st.session_state.vgn
+bavaria = st.session_state.bavaria
+germany = st.session_state.germany
 
 # Streamlit UI
 st.title("Random GPS Coordinate Generator")
