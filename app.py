@@ -5,7 +5,7 @@ from shapely.geometry import Point
 from src import *
 
 vgn = region("vgn.geojson")
-bayern = region("bayern.geojson")
+#bayern = region("bayern.geojson")
 
 # Streamlit UI
 st.title("Random GPS Coordinate Generator")
