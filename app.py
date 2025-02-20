@@ -8,6 +8,8 @@ if "vgn" not in st.session_state:
     st.session_state.vgn = region("vgn")
 if "bavaria" not in st.session_state:
     st.session_state.bavaria = region("bavaria")
+if "bavaria_north" not in st.session_state:
+    st.session_state.bavaria_north = region("bavaria_north")
 if "germany" not in st.session_state:
     st.session_state.germany = region("germany")
 
@@ -25,6 +27,10 @@ if st.button("VGN"):
 
 if st.button("Bavaria"):
     lat, lon = bavaria.generate_random_point()
+    st.success(f"{lat:.4f}, {lon:.4f}")
+    
+if st.button("Bavaria North"):
+    lat, lon = bavaria_north.generate_random_point()
     st.success(f"{lat:.4f}, {lon:.4f}")
 
 if st.button("Germany"):
