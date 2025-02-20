@@ -15,6 +15,7 @@ if "germany" not in st.session_state:
 
 vgn = st.session_state.vgn
 bavaria = st.session_state.bavaria
+bavaria_north = st.session_state.bavaria_north
 germany = st.session_state.germany
 
 # Streamlit UI
